@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&family=Tiny5&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -5,26 +7,52 @@
 }
 
 header{
-    background-image: url(/assets/img/banner.jfif);
+    background-color: rgb(48, 121, 77);
+    padding-top: 3rem;
+    font-size: 3rem;
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
     height: 12.5vh;
+    text-shadow: 0 0 30px #d2f3d7;
+    color: greenyellow;
 }
 
+#searchInput{
+    position: absolute;
+    right: 2rem;
+    top: 4.2rem;
+}
+
+#container-check{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 10px;
+    position: absolute;
+    top: 1rem;
+    align-items: flex-start;
+    left: 1rem;
+}
 
 main{
     display: flex;
     justify-content: center;
-    background-color: rgb(26, 43, 37);
-    height: 100vh;
+    padding-bottom: 2rem;
     flex-wrap: wrap;
     gap: 20px;
 }
 
+body{
+    background-color: rgb(26, 43, 37);
+}
+
 #card{
     margin-top: 2rem;
-    width: 25%;
+    width: 30%;
     height: 15rem;
     display: flex;
-
     border-radius: 2rem;
     background-color: rgb(10, 10, 41);
 }
@@ -36,11 +64,38 @@ main{
 
 #Character{
     justify-content: center;
+    text-align: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-left: 10px;
+    padding-left: 20px;
     color: rgb(23, 73, 167);
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#pagination{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-page{
+    margin: 0 5px;
+    padding: 0px 3px;
+    border: none; 
+    border-radius: 5px; 
+    background-color: #29734d; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.btn-page:hover {
+    background-color: #1eff00; 
 }
 
 
+.btn-page.active {
+    background-color: #1eff00; 
+    font-weight: bold; 
+}
